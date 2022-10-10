@@ -64,7 +64,7 @@ public class Pizza {
     		bill += "Paperbag Added: "+Paperbag_Added+"\n";
     	}
     	int total = Base_Price_Of_The_Pizza+Extra_Cheese_Added+Extra_Toppings_Added+Paperbag_Added;
-        bill += "Total Price: "+total;
+        bill += "Total Price: "+total+"\n";
         return bill;
     }
 }
