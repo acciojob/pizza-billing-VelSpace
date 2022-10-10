@@ -19,6 +19,7 @@ public class Pizza {
         	this.price = 400;
         }
         this.Base_Price_Of_The_Pizza = price;
+        bill += "Base Price Of The Pizza: "+Base_Price_Of_The_Pizza+"\n";
     }
 
     public int getPrice(){
@@ -27,6 +28,7 @@ public class Pizza {
 
     public void addExtraCheese(){
     	this.Extra_Cheese_Added = 80;
+    	bill += "Extra Cheese Added: "+Extra_Cheese_Added+"\n";
     }
 
     public void addExtraToppings(){
@@ -35,19 +37,17 @@ public class Pizza {
         }else {
         	this.Extra_Toppings_Added = 120;
         }
+    	bill += "Extra Toppings Added: "+Extra_Toppings_Added+"\n";
     }
 
     public void addTakeaway(){
     	this.Paperbag_Added = 20;
+    	bill += "Paperbag Added: "+Paperbag_Added+"\n";
     }
 
     public String getBill(){
     	int total = Base_Price_Of_The_Pizza+Extra_Cheese_Added+Extra_Toppings_Added+Paperbag_Added;
-        bill = "Base Price Of The Pizza: "+Base_Price_Of_The_Pizza+"\n"+
-               "Extra Cheese Added: "+Extra_Cheese_Added+"\n"+
-        	   "Extra Toppings Added: "+Extra_Toppings_Added+"\n"+
-               "Paperbag Added: "+Paperbag_Added+"\n"+
-        	   "Total Price: "+total;
+        bill += "Total Price: "+total;
         return this.bill;
     }
 }
