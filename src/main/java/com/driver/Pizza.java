@@ -19,7 +19,7 @@ public class Pizza {
         	this.price = 400;
         }
         this.Base_Price_Of_The_Pizza = price;
-        bill += "Base Price Of The Pizza: "+Base_Price_Of_The_Pizza+"\n";
+        bill = "Base Price Of The Pizza: "+Base_Price_Of_The_Pizza+"\n";
     }
 
     public int getPrice(){
